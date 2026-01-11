@@ -1,5 +1,7 @@
 # MilkWidgetCore
 
+UPDATE: -Jan 11 2026, first v1.0.0 version released, non-serious project, compile errors, first work on this project in a long time. Just bored tbh. I suck at coding.
+
 A hyper-easy desktop widget engine for Linux (cross-platform via Qt5/6).
 
 ## Features
