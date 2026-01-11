@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets>
+    <!-- System Monitor Widget -->
+    <widget width="320" height="220" 
+            background="rgba(25,30,40,230)" 
+            rounded="12" 
+            position="top-right"
+            glass="true"
+            draggable="true">
+        
+        <title color="#4A9EFF" glow="#4A9EFF 8">System Monitor</title>
+        
+        <spacer size="8"/>
+        
+        <label color="#888888" style="caption">CPU Usage</label>
+        <progress id="cpu" 
+                  bg="rgba(50,50,50,200)" 
+                  color="#FF6B6B" 
+                  height="10" 
+                  rounded="5"
+                  animated="true"/>
+        
+        <spacer size="4"/>
+        
+        <label color="#888888" style="caption">Memory</label>
+        <progress id="mem" 
+                  bg="rgba(50,50,50,200)" 
+                  color="#4ECDC4" 
+                  height="10" 
+                  rounded="5"
+                  animated="true"/>
+        
+        <spacer size="4"/>
+        
+        <label color="#888888" style="caption">Disk (root)</label>
+        <progress id="disk" 
+                  bg="rgba(50,50,50,200)" 
+                  color="#FFE66D" 
+                  height="10" 
+                  rounded="5"/>
+        
+        <spacer size="10"/>
+        
+        <label id="info" color="#AAAAAA" style="monospace" size="9"/>
+    </widget>
+    
+    <!-- Clock Widget -->
+    <widget width="180" height="70"
+            background="rgba(40,25,60,200)"
+            rounded="15"
+            position="top-left"
+            glass="true">
+        
+        <clock style="digital" 
+               color="#FFFFFF" 
+               format="hh:mm:ss"
+               show-date="true"
+               date-format="ddd, MMM d"/>
+    </widget>
+    
+    <!-- Network Widget -->
+    <widget width="200" height="80"
+            background="rgba(20,35,50,220)"
+            rounded="10"
+            position="bottom-right">
+        
+        <title color="#00BCD4" size="12">Network</title>
+        
+        <hbox>
+            <vbox>
+                <label color="#666" size="9">Download</label>
+                <label id="dl" color="#4CAF50" style="monospace"/>
+            </vbox>
+            <spacer/>
+            <vbox>
+                <label color="#666" size="9">Upload</label>
+                <label id="ul" color="#FF5722" style="monospace"/>
+            </vbox>
+        </hbox>
+    </widget>
+</widgets>
